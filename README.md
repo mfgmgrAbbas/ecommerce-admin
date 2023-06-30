@@ -1,34 +1,89 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+First of all install nextjs with its dependcies by follwong command
+npx create-next-app@latest --ecommerce-admin --typescript --tailwind --eslint
 
-## Getting Started
+Need to install the following packages:
+  create-next-app@13.4.7
+Ok to proceed? (y) y
+√ Would you like to use `src/` directory with this project? ... No 
+√ Use App Router (recommended)? ...  Yes
+√ Would you like to customize the default import alias? ... No 
 
-First, run the development server:
+switch to the project by
+cd ecommerce-admin
 
-```bash
+install shadcn https://ui.shadcn.com/docs/installation
+
+npx shadcn-ui@latest init
+√ Which style would you like to use? » Default
+√ Which color would you like to use as base color? » Slate
+√ Where is your global CSS file? ... app/globals.css
+√ Do you want to use CSS variables for colors? ...  yes
+√ Where is your tailwind.config.js located? ... tailwind.config.js
+√ Configure the import alias for components: ... @/components
+√ Configure the import alias for utils: ... @/lib/utils
+√ Are you using React Server Components? ...  yes
+√ Write configuration to components.json. Proceed? ... yes
+
+install Button from shadcn
+npx shadcn-ui@latest add button
+
+
+Now run the project
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+now close the project and do some changes
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+page.tsx remove everything simply heelo world
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+create (root) folder under app and in root folder create page.tsx and remove old page.tsx
 
-## Learn More
+in layout,tsx change title and des
 
-To learn more about Next.js, take a look at the following resources:
+in global.css add
+html,
+body,
+:root {
+  height: 100%;
+}
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+run project
+npm run dev
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+clerk authuntication create account at clerk https://dashboard.clerk.com/apps/app_2Rt78I0whS4kB5gUqJ1WQUzNC3P/instances/ins_2Rt78FkqswSX11Y7NTUEFiePznl? and create a project
 
-## Deploy on Vercel
+npm install @clerk/nextjs
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+in layout
+import clerprovider and wrap html and body into clerkProvider tag
+import { ClerkProvider } from '@clerk/nextjs'
+return (
+    <ClerkProvider>
+    <html lang="en">
+      <body className={inter.className}>{children}</body>
+    </html>
+    </ClerkProvider>
+  )
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+add .env file to gitignore
+
+Set Environment Keys and paste into env file
+
+create middleware.ts file in the root and paste the code from the document of the clerk
+
+create the folder structure for sign-in as mentioned blow
+app => (auth) => (routes) => sign-in => [[...sign-in]] => page.tsx
+create the folder structure for sign-up as mentioned blow
+(routes) => sign-in => [[...sign-up]] => page.tsx
+
+import userbutton in page.tsx
+import { UserButton } from "@clerk/nextjs";
+<UserButton afterSignOutUrl="/"/>
+
+run the project
+
+npm run dev
+
+now install dialogbux from shadcn ui
+npx shadcn-ui@latest add dialog
+
+create new file inside component folder model.tsx

@@ -201,6 +201,54 @@ run the project npm run dev
 now open filde store-modal.tsx
 
 
+now insert window.location.assign(`/${response.data.id}`)  
+it will complete refresh 
+
+now in page.tsx in dashbaord
+
+now in dashboard layout.tsx import <Navbar/>
+
+create navbar.tsx under the components and import MainNav in this
+
+create main-nav.tsx under the components
+
+now install combobox from shadcn for this first install popover from shad cn
+npx shadcn-ui@latest add popover
+and then install command
+npx shadcn-ui@latest add command
+
+run the project npm run dev
+
+create new file store-switcher.tsx unser component folder
+
+create new folder inside app dashboard routes
+settings
+
+inside setting create new file page.tsx
+
+create settingsform component inside the setting create components folder insdie of setting and inside component create new file settings-form.tsx
+
+create new file heading.tsx under components and UI
+
+install component Seprator from shadcn ui
+npx shadcn-ui@latest add separator
+
+now again run the project npm run dev
+
+now create route.ts in the app/api/stroe/[storeId]
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

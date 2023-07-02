@@ -34,7 +34,7 @@ now close the project and do some changes
 
 page.tsx remove everything simply heelo world
 
-create (root) folder under app and in root folder create page.tsx and remove old page.tsx
+create (root) folder under app and indise it (routes) folder create page.tsx and remove old page.tsx
 
 in layout,tsx change title and des
 
@@ -85,7 +85,7 @@ npm run dev
 now install dialogbux from shadcn ui
 npx shadcn-ui@latest add dialog
 
-create new file inside component folder model.tsx
+create new file inside component folder modals.tsx
 
 install library zustand for state management
 npm install zustand
@@ -93,6 +93,9 @@ npm install zustand
 run project npm run dev
 
 create new folder hooka in the roots and within create use-store-modal.tsx file
+
+create modal.tsx under components and under ui
+
 create new folder modals in the component
 create file store-modal.tsx
 
@@ -137,6 +140,7 @@ npx prisma init
 
  now run command
  npx prisma generate
+
 
 go to the app folder then layout check prisma generate update node
 
@@ -183,7 +187,7 @@ now stop the application
 
 to reset model
 
-npx prisma migrate reset
+
 
 it will delete all the data base
 Database reset successful
@@ -236,6 +240,8 @@ npx shadcn-ui@latest add separator
 now again run the project npm run dev
 
 now create route.ts in the app/api/stroe/[storeId]
+
+update
 
 
 

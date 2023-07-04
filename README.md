@@ -293,7 +293,10 @@ now import a component <BillboardClient />
 
 now build component BillboardClient  create components filder inside of this billborads folder create file client.tsx
 
-create new fo;der 
+create new folder inside of billboards folder [billboardId] and create page.tsx
+copy the setting-form and create a new folder in [billboardId] called coponents paste it here and rename it billboard-form
+
+
 
 
 

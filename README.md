@@ -187,7 +187,7 @@ now stop the application
 
 to reset model
 
-
+npx prisma nigrate reset
 
 it will delete all the data base
 Database reset successful
@@ -241,7 +241,71 @@ now again run the project npm run dev
 
 now create route.ts in the app/api/stroe/[storeId]
 
-update
+update data
+
+now  reate alert-modal.tsx file in components modals
+
+now update delete function in setting-form.tsx amd import alert modal in app (dashboard)
+
+and check by deleting the items
+
+now update main-nav-bar
+
+now instal alet boc from shadecn ui 
+npx shadcn-ui@latest add alert
+
+mow create component api-alert.tsx in components ui
+
+now instal badge from shadcn ui
+npx shadcn-ui@latest add badge
+
+Create new hook
+use-origin.tsx
+
+write origin file and now go back app folder dashboard routes setting component and setting form write in the description 
+description= {`${origin}/api/${params.storeId}`}
+
+now in schema.prisma file
+install extension prisma for vs code
+
+write in prisma file for Billboard
+
+
+
+now in the root Setuplayout and 
+const billboard = await prismadb.billboard if error then run 
+
+npx prisma generate
+now it will remove error now you can remove above const billboard from layout
+
+now push on the planet scale
+
+npx prisma db push
+
+now run npm run dev
+
+now create nav for billboard in main-nav.tsx
+
+now build the billboard page create new folder billboards and inside create page.tsx
+app => (dashboard) => [storeId] => (routes) => billboards =>page.tsx
+
+now import a component <BillboardClient />
+
+now build component BillboardClient  create components filder inside of this billborads folder create file client.tsx
+
+create new fo;der 
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

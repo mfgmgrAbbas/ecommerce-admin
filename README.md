@@ -296,6 +296,22 @@ now build component BillboardClient  create components filder inside of this bil
 create new folder inside of billboards folder [billboardId] and create page.tsx
 copy the setting-form and create a new folder in [billboardId] called coponents paste it here and rename it billboard-form
 
+To upload images create account on https://cloudinary.com/
+and 
+https://next-cloudinary.spacejelly.dev/
+
+npm install next-cloudinary
+
+npm run dev
+
+copy configure NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME="<Your Cloud Name>" and paste in into .env file <Your Cloud Name> will replace with cloudinary dashbaord cloud name
+
+creat new file impage-upload.tsx in components under ui
+
+
+
+
+
 
 
 

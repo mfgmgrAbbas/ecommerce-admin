@@ -308,6 +308,44 @@ copy configure NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME="<Your Cloud Name>" and paste i
 
 creat new file impage-upload.tsx in components under ui
 
+login to cloudunary website and click on the setting icon on bottom left side then click upload and click on add upload preset and sigining mode to unsigined and save changes copy the upload presest name and paste in to image-upload.tsx
+<CldUploadWidget onUpload={onUpload} uploadPreset="hi1wn04q">
+
+for error made changes in the next.config.js file 
+const nextConfig = {
+    images: {
+        domains: [
+            'res.cloudinary.com'
+        ]
+    }
+}
+
+create a new folder in the api [storeId] then billboards and inside route.ts
+
+Create new folder [billboardId] inside billboards and create route.ts folder and go into [storeId ] copy everything from route.ts and  paste it [billboardId] route.ts
+
+
+from shadcn ui install data table
+
+npx shadcn-ui@latest add table
+Add tanstack/react-table dependency:
+npm install @tanstack/react-table
+
+npm run dev
+
+copy columns.tsx and create new file within client.tsx
+
+
+install a package to createAt to string date or formate the 
+date-fns
+npm i date-fns
+
+npm run dev
+
+now copy setp 2 from shad cn ui and create data-table.tsx under the ui
+
+
+
 
 
 

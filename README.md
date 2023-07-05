@@ -344,6 +344,20 @@ npm run dev
 
 now copy setp 2 from shad cn ui and create data-table.tsx under the ui
 
+add pagination to data table
+
+add filtering
+
+now create new file cell-action.tsx with client and columns.tsx files
+
+now for cellaction install dropdown from shadcn ui
+npx shadcn-ui@latest add dropdown-menunpm
+
+npm run dev
+
+
+
+
 
 
 

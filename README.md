@@ -355,6 +355,10 @@ npx shadcn-ui@latest add dropdown-menunpm
 
 npm run dev
 
+in compponent under ui create new file api-list
+ develop the component and import it into client.tsx
+
+ 
 
 
 

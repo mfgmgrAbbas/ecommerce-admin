@@ -387,6 +387,40 @@ make sizes model and make amendment in schema.prisma
 
 
 
+make Color model and make amendment in schema.prisma
+ npx prisma generate
+ npx prisma db push
+
+now again copy the sizes and paste inside the routes ans rename the folder and files
+
+ now in api folder now copy the billboard folder and paste it into [storeId] folder and rename it for sizes and made all changes
+
+
+make Products and Image model and make amendment in schema.prisma
+ npx prisma generate
+ npx prisma db push
+
+now again copy the sizes and paste inside the routes ans rename the folder and files
+
+ now in api folder now copy the billboard folder and paste it into [storeId] folder and rename it for sizes and made all changes
+
+ copy the billboards from dashboard structue and paste into routes and rename it to products and update all data
+
+go into lib folder and and update utils for price of products
+
+from shadcn install checkbox
+npx shadcn-ui@latest add checkbox
+
+
+ now in api folder now copy the billboard folder and paste it into [storeId] folder and rename it for sizes and made all changes
+
+
+
+
+
+
+
+
 
 
 

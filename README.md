@@ -358,6 +358,33 @@ npm run dev
 in compponent under ui create new file api-list
  develop the component and import it into client.tsx
 
+update schema.prisma add catagory to it
+
+mow regenerate prisma
+npx prisma generate
+
+now run 
+npx prisma db push
+
+npm run dev
+
+copy the billboards from dashboard structue and paste into routes and rename it to categories and update all data
+
+now install Select from shadcn ui
+npx shadcn-ui@latest add select
+
+npm run dev
+
+now in api folder now copy the billboard folder and paste it into [storeId] folder and rename it and made all changes
+
+
+
+
+
+
+
+
+
  
 
 

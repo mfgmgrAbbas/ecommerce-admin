@@ -377,6 +377,16 @@ npm run dev
 
 now in api folder now copy the billboard folder and paste it into [storeId] folder and rename it and made all changes
 
+make sizes model and make amendment in schema.prisma
+ npx prisma generate
+ npx prisma db push
+
+ now again copy the billboards and paste inside the routes ans rename the folder and files
+
+ now in api folder now copy the billboard folder and paste it into [storeId] folder and rename it for sizes and made all changes
+
+
+
 
 
 

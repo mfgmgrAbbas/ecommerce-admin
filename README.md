@@ -327,6 +327,9 @@ Create new folder [billboardId] inside billboards and create route.ts folder and
 
 from shadcn ui install data table
 
+
+
+
 npx shadcn-ui@latest add table
 Add tanstack/react-table dependency:
 npm install @tanstack/react-table
@@ -413,6 +416,27 @@ npx shadcn-ui@latest add checkbox
 
 
  now in api folder now copy the billboard folder and paste it into [storeId] folder and rename it for sizes and made all changes
+
+ create new file stripe.ts in lib folder
+install pacakage
+npm i stripe
+
+npm run dev
+
+now create checkout routes in API folder under [storeId] create new folder checkout and inside it create route.ts
+
+add card from shadcn
+npx shadcn-ui@latest add card
+ create new folder actions
+
+ install new pacage recharts
+
+ npm i next-themes
+ 
+
+ npm i recharts
+
+
 
 
 

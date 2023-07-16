@@ -1,9 +1,7 @@
-
+import { NextResponse } from "next/server";
+import { auth } from "@clerk/nextjs";
 
 import prismadb from "@/lib/prismadb";
-import { auth } from "@clerk/nextjs";
-import { NextResponse } from "next/server";
-
 
 
 export async function PATCH(
@@ -17,7 +15,7 @@ export async function PATCH(
     const { name } = body;
 
     if (!userId) {
-      return new NextResponse("Unauthenticated", { status: 401 });
+      return new NextResponse("Unauthenticated", { status: 403 });
     }
 
     if (!name) {
